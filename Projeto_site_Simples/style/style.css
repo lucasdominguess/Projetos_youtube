@@ -3,7 +3,7 @@
     margin: 0px;
 }
 body { 
-    background: linear-gradient(120deg ,#19e2db66, #2c7fab58,#1509ff4d);
+    /* background: linear-gradient(120deg ,#19e2db66, #2c7fab58,#1509ff4d); */
 }
 header { 
     display: flex;
@@ -12,29 +12,35 @@ header {
     align-items: center;
     justify-content: space-around;
 }
-#menu { 
-    background-color: rgb(168, 168, 201);
-    display: flex;
-    font-size: 1.3rem;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    font-size: 1.9rem;
-    cursor: pointer;
+nav { /*Menu principal*/
+    background-color: rgba(0, 0, 255, 0.425); 
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.212); 
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0px;
+    font-size: 1.5rem;
+}
+nav > h1 { 
+    color: #fff;
+}
+nav > a {  /*Personalizando "a" (links)*/ 
 
+        color: white; 
+        padding: 10px; 
+        text-decoration: none;
+        font-weight: bold; /*deixando fonte negrito*/    
+        transition-duration: 0.1s;
+    }
+nav > a:hover {
+    background-color: #10063d;
+    color: white;
+    border-radius: 10px; 
+    transition-duration: 0.5s;
     
-
-
-
-
 }
 
-/* #imagem { 
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-   
-    
+
+
    
  
 .projetos { 
@@ -42,7 +48,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    
+ 
     
     flex-wrap: wrap;
     font-size: 1.4rem;
