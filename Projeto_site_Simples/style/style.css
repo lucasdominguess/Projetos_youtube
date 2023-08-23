@@ -8,6 +8,8 @@
     --color-dark-50: #797984;
     --color-dark-100: #312d37;
     --color-dark-900: #000;
+    /* Azul*/ 
+    --color-azul1--: #3110c7b5;
 }
 
 * { 
@@ -27,6 +29,18 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+#tecnologias{ 
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+    padding: 10px;
+    
+
+}
+#tecnologias img { 
+    width: 130px;
+    height: 150px;
 }
 nav { /*Menu principal*/
     background-color: rgba(0, 0, 255, 0.425); 
@@ -62,7 +76,9 @@ nav > a:hover {
     display:inline-block;
     align-items:end ;
 }
-
+#menu2 h2 { 
+  font-weight: bold;
+}
  /*Main*/
 .projetos { 
     display: flex;
@@ -80,14 +96,18 @@ nav > a:hover {
    
 }
 .projetos h2 { 
-    
+    text-align: center;
     font-size: 1.4rem;
+    font-family: 'Courgette' ,cursive;
 }
 .projetos >div { 
     align-items: center;
     justify-content: center;
-
 }
+.projetos  p { 
+    text-align: center;
+}
+
 .projetos >div:hover {
     transition: .5s;
     transform: scale(1.1);
@@ -123,9 +143,12 @@ nav > a:hover {
 .dark nav > a:hover { 
     
     text-decoration: none;
-    
-
-
+}
+.dark footer { 
+    background-color: var(--color-dark-100);
+}
+.dark footer >p  { 
+    color: white;
 }
 @keyframes dark-to-light-background {
     0% {
@@ -144,6 +167,60 @@ nav > a:hover {
         background-color:var(--color-dark-100); 
     }
 } 
-@media screen {
-    
+footer { 
+    background-color: var(--color-light-50);
+    padding: 30px;
+    margin: -15px;
+
+}
+footer h1  {
+    text-align: center; 
+
+}
+footer p { 
+    text-align: center;
+}
+.footer_sociais { 
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    color: ;
+}
+.footer_sociais li { 
+    background-color: var(--color-light-50);
+    border-radius: 50%;
+    border: 1px solid var(--color-light-50) ;
+
+}
+.footer_sociais li i { 
+    padding: 30px;
+    font-size: 1.5rem;
+    color: rgb(13, 0, 0);
+}
+.footer_sociais li:hover { 
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    background-color:var(--color-dark-50);
+    color: white;
+}
+.footer_sociais li i:hover{ 
+    color: white;
+}
+.footer_sociais::before { 
+    content:'';
+    height: 5px;
+    width: 200px;
+    position: absolute;
+    background-color: var(--color-dark-50);
+    bottom: -30px;
+}
+footer .footer_comercial { 
+    text-align: center;
+    color :black;
+    margin: 90px auto;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
