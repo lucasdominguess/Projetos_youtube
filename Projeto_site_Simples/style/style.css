@@ -30,6 +30,15 @@ header {
     align-items: center;
     justify-content: space-around;
 }
+#fotoperfil {
+    display: flex;
+    justify-content: start;
+    background-color: wheat; 
+    width: 300px;
+    padding: 0px;
+    margin: 0px -70px;
+
+}
 #tecnologias{ 
     display: flex;
     justify-content: end;
@@ -41,6 +50,10 @@ header {
 #tecnologias img { 
     width: 130px;
     height: 150px;
+}
+#tecnologias img:hover { 
+    transition: .5s;
+    transform: scale(1.1);
 }
 nav { /*Menu principal*/
     background-color: rgba(0, 0, 255, 0.425); 
@@ -75,6 +88,9 @@ nav > a:hover {
 #mode_icon { 
     display:inline-block;
     align-items:end ;
+}
+#menu2 { 
+   
 }
 #menu2 h2 { 
   font-weight: bold;
