@@ -5,38 +5,17 @@
 --var-rosa3:#BC06FA;
 
  
---var-roxo1: #AA19FA;
---var-roxo2 :#A124FB;
---var-roxo3:#8A47FE;
-
---var-roxo4 :#715AFC;
-
---var-azul0 :#5863FE;
---var-azul1 :#4E81FD;
---var-azul2 :#4987FD;
---var-azul3 :#26AEFE;
---var-azul4 :#04D6FF;
-
---color-gradient: linear-gradient(100deg,
-    var(--var-rosa), var(--var-rosa2), var(--var-rosa3),
-    var(--var-roxo1), var(--var-roxo2), var(--var-roxo3), var(--var-roxo4),
-    var(--var-azul0), var(--var-azul1), var(--var-azul2), var(--var-azul3), var(--var-azul4)
-  );
-
 }
 /*Cabeçalho ->*/
 .inicio {
-    background-image: url(../ativos/perfil/LucasBack1.jpg);
+    background-image: url();
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
     padding: -80px;
 }
-#lucasimg {
-    
-  
-}
+
 
 /*Barra Lateral -> */
 aside {
@@ -55,7 +34,7 @@ aside {
 
 .icon-menu img {
     width: 50px;
-    background-color: #f4e5d0da;
+    background-color: white;
     border-radius: 5px;
     margin-top: 15px;
     margin-right: 15px;
